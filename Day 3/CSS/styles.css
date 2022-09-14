@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+div.users{
+    /* float: left; */
+    /* margin-left: 0px 0px 0px 20px; */
+    /* background-color: aquamarine; */
+    /* border: 2px solid black; */
+    float: left;
+    border: 1px solid black;
+    margin: 0px 0px 0px 20px;
+
+}
+
+h3,p{
+    color: blueviolet;
+}
+
+h1,h3,p{
+    text-align: center;
+}
+
+img{
+    width: 210px;
+    height: 210px;
+    margin: 0px 20px;
+}
+
+
+

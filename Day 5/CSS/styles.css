@@ -1,0 +1,23 @@
+div#heading{
+    text-align: center;
+    background-color: blueviolet;
+}
+
+div#form{
+    
+    background-color: black;
+
+}
+
+input#button{
+    background-color: aqua;
+    border: none;
+    margin-left: 130px;
+}
+
+table{
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+

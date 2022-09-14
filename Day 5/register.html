@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+
+    <body>
+        <div id="heading">
+            <h1>Forms</h1>
+        </div>
+
+        <div id="form">
+            <form method="get" action="">
+                <table id="table">
+                    <tr>
+                        <td><label for="">Name:</label></td>
+                        <td><input type="text" name="name" placeholder="Name" value="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Email:</label></td>
+                        <td><input type="email" name="email" placeholder="email" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Mobile:</label></td>
+                        <td><input type="text" pattern="[0-9]{10}" name="mobile" placeholder="mobile number" value="9880628382" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Address:</label></td>
+                        <td><textarea name="address" id="" cols="30" rows="10" placeholder="enter your address" name=""></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Photo:</label></td>
+                        <td><input type="file" name="photo" multiple></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Gender:</label></td>
+                        <td><input type="radio" name="gender" id="">Male <input type="radio" name="gender" id="">Female</td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Class Type:</label></td>
+                        <td><input type="checkbox" name="ctype" id="">Online <input type="checkbox" name="ctype" id="">Offline</td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Courses:</label></td>
+                        <td><select name="course" id="">
+                            <option value="">select course</option>
+                            <option value="1">Frontend</option>
+                            <option value="2">Backend</option>
+                            <option value="3">MySQL</option>
+                            <option value="4">Full Stack</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Save" id="button"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        </form>
+    </body>
+</html>
