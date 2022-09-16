@@ -2,3 +2,82 @@ h3{
     text-align: center;
 }
 
+
+
+#one{
+    list-style-type: armenian;
+    display: inline-block;
+
+}
+
+#two{
+    list-style-type: circle;
+    display: inline-block;
+
+}
+
+#three{
+    list-style-type: decimal;
+    display: inline-block;
+
+}
+
+#four{
+    list-style-type: decimal-leading-zero;
+    display: inline-block;
+
+}
+
+#five{
+    list-style-type: disc;
+    display: inline-block;
+
+}
+
+#six{
+    list-style-type: georgian;
+    display: inline-block;
+
+}
+
+#seven{
+    list-style-type: lower-alpha;
+    display: inline-block;
+
+}
+
+#eight{
+    list-style-type: lower-greek;
+    display: inline-block;
+
+}
+
+#nine{
+    list-style-type: lower-latin;
+    display: inline-block;
+
+}
+
+#ten{
+    list-style-type: lower-roman;
+    display: inline-block;
+
+}
+
+#eleven{
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+#twelve{
+    list-style-type: square;
+    display: inline-block;
+
+}
+
+#thirteen{
+    list-style-type: upper-roman;
+    display: inline-block;
+
+}
