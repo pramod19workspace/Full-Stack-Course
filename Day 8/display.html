@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Display</title>
+
+        <style>
+            #main{
+                background-color: grey;
+                height: 200px;
+                width: 200px;
+                color: white;
+            }
+
+            #one,#two{
+                height: 50px;
+                width: 50px;
+            }
+
+            #one{
+                /* background-color: brown; */
+                /* display: inline; */
+                /* display: inline-block; */
+                /* display: block; */
+                /* display: none; */
+                visibility: hidden;
+                /* visibility: visible; */
+            }
+
+            #two{
+                background-color:black;
+            }
+
+            #main:hover #one{
+                background-color: brown;
+                visibility: visible;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="main">
+            This is Main Div
+            <div id="one">
+                One
+            </div>
+            <div id="two">
+                Two
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

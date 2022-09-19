@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tool-Tip</title>
+
+        <style>
+            body{
+                text-align: left;
+                
+            }
+
+            .tooltip{
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+
+            }
+
+            .tooltip .tooltiptext{
+                visibility: hidden;
+                width: 220px;
+                background-color: yellow;
+                color: black;
+                text-align: center;
+                border-radius: 50%;
+                padding: 50px 0px;
+                /* Position of the tooltip */
+                position:absolute;
+                z-index: 1;
+
+
+            }
+
+            .tooltip:hover .tooltiptext{
+                visibility: visible;
+            }
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="tooltip">Read More
+            <span class="tooltiptext">more details... </span>
+        </div>    
+    </body>
+
+
+</html>
