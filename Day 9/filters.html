@@ -3,30 +3,142 @@
 <html>
 <head>
     <title>filter</title>
+    <style>
+        img{
+            width: 150px;
+            height: 150px;
+
+        }
+
+        div{
+            float: left;
+
+        }
+        .sec1 {
+            float: left;
+            margin-left: 50px;
+        }
+
+        h4{
+            text-decoration: underline;
+            text-align: center;
+        }
+        img{
+            margin-left: 20px;
+        }
+
+        #img1{
+
+            filter:blur(2px);
+
+        }
+
+        #img2{
+            
+            filter:brightness(40%);
+
+        }
+
+        #img3{
+            
+            filter: saturate(4);
+        }
+
+        #img4{
+
+            filter: contrast(30%);
+            
+        }
+
+        #img5{
+
+            filter: drop-shadow(8px -8px 4px blue);
+            
+        }
+
+        #img6{
+
+            filter: invert(100%);
+            
+        }
+
+        #img7{
+
+            filter: grayscale(50%);
+            
+        }
+
+        #img8{
+
+            filter: opacity(60%);
+            
+        }
+
+        #img9{
+            
+            filter: hue-rotate(25deg);
+        }
+
+        
+
+
+    </style>
+
 </head>
 
 <body>
-
-    <div class="section">
+<section>
+    <div class="sec1">
         <div>
             <h4>Blur</h4>
-            <img is="img1" src="images/popcorn.jfif" alt="blur">
+            <img id="img1" src="images/popcorn.jfif" alt="blur">
         </div>
-        <br>
-        <div class="section">
+
+        <div>
             <h4>Brightness</h4>
-            <img is="img1" src="images/popcorn.jfif" alt="blur">
-            
+            <img id="img2" src="images/popcorn.jfif" alt="brightness">
         </div>
 
 
+        <div>
+            <h4>Saturate</h4>
+            <img id="img3" src="images/popcorn.jfif" alt="saturate">
+        </div>
+
+        <div class="sec1">
+            <div>
+                <h4>Contrast</h4>
+                <img id="img4" src="images/popcorn.jfif" alt="contrast">
+            </div>
+            <div>
+                <h4>Drop-shadow</h4>
+                <img id="img5" src="images/popcorn.jfif" alt="Drop-Down">
+            </div>
+            <div>
+                <h4>Invert</h4>
+                <img id="img6" src="images/popcorn.jfif" alt="Invert">
+            </div>
+
+        </div>
+
+        <div class="sec1">
+            <div>
+                <h4>GrayScale</h4>
+                <img id="img7" src="images/popcorn.jfif" alt="GrayScale">
+            </div>
+            <div>
+                <h4>Opacity</h4>
+                <img id="img8" src="images/popcorn.jfif" alt="Opacity">
+            </div>
+            <div>
+                <h4>Hue-Rotate</h4>
+                <img id="img9" src="images/popcorn.jfif" alt="Hue-Rotate">
+            </div>
+
+        </div>
 
     </div>
-
-    <div class="section"></div>
-
-    <div class="section"></div>
-
+</section>
 
 </body>
 
