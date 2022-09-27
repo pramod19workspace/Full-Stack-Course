@@ -3,105 +3,152 @@
 <head>
     <title>Page 1</title>
 
+
     <style>
 
         *{
-            box-sizing: border-box;
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
         }
 
-        header{
-            background-color: aqua;
-            height: 50px;
-            text-align: center;
-            padding-top: 15px;
-        }
+        header,footer{
 
-        li{
-            list-style-type: none;
+            background-image: linear-gradient(yellow,red);
+            color:black;
+            text-shadow: -8px -4px 2px rgb(238, 37, 15);
+            
         }
 
         nav{
-            background-color: blueviolet;
-            height: 40px;
-            
-        }
-        
-
-        nav li a{
-            float: left;
-            padding-left: 133px;
-            padding-top: 10px;
-            color: rgb(20, 19, 19);
-            text-decoration: none;
+            height: 50px;
+            background-image: linear-gradient(blue,green);
         }
 
         article{
-            background-color: aquamarine;
-            height:400px;
-            /* float: left; */
-            /* margin-right:500px ; */
+
+            height: 400px;
+            background-image: url("/Day 11/340050.jpg");
+            background-size: auto;
+            color: aliceblue;
         }
-
-        div#content{
-            margin-right: 500px;
-
-        }
-
         
+        h1{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
 
-       
+        nav ul{
+            list-style-type: none;
+
+        }
+
+        li{
+            float: left;
+            padding-left: 95px;
+            padding-top: 15px;
+            
+        }
+
+        li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: aliceblue;
+        }
+
+        li a:hover{
+            color: aqua;
+            font-size: 22px;
+        }
+
+        li:hover{
+            padding-top: 10px;
+        }
+
+        article{
+            padding: 50px;
+        }
+
+        footer{
+            text-align: center;
+            padding: 10px;
+        }
+
+        article div{
+            width: 50%;
+            float: left;
+        }
+
+        #login{
+           
+
+        }
+
+        div#sec2{
+            padding-left: 20px;
+            background-image: url("download.jfif");
+            /* padding-left: 0px; */
+            box-shadow: -4px -4px 3px yellow;
+            filter: opacity(80%);
+        }
+
+        iframe{
+            width: 500px;
+            height: 300px;
+        }
+
 
 
 
 
     </style>
+   
 </head>
 
 <body>
-    <header>
-        Pramod R
-    </header>
+    <header><h1>Reddy's team page</h1></header>
 
+    
     <nav>
-
         <ul>
-            <li><a href="">Home</a></li>
+
+            <li><a href="#">Home</a></li>
             <li><a href="/Day 1/Welcome.html">Welcome</a></li>
-            <li><a href="/Day 2/images.html">Images</a></li>
-            <li><a href="/Day 3/users.html">Users</a></li>
-            <li><a href="/Day 4/MarksSheet.html">MarksSheet</a></li>
+            <li><a href="/Day 9/filters.html">Filters</a></li>
             <li><a href="/Day 9/gradient.html">Gradient</a></li>
+            <li><a href="/Day 10/animation.html">Animation</a></li>
+            <li><a href="/Day 4/MarksSheet.html">Marksheet</a></li>
+            <li><a href="/Day 3/users.html">Users</a></li>
 
         </ul>
 
+
     </nav>
-    <!-- <div> -->
-    <article>
-
-        <div id="content">
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod iusto voluptatum quos. Nihil quibusdam placeat quos harum eveniet voluptas alias accusamus, dolores amet iure ipsa optio, quis rerum error quas.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum fugit dolore nam, expedita tempore tempora tenetur voluptas porro beatae laborum suscipit aspernatur dolores quam explicabo atque facilis magni assumenda. Blanditiis?
-    </p>
-
-    </div>
-
-    <div>
-        <iframe src="/Day 5 and Day 6/login.html" frameborder="0"></iframe>
-    </div>
-
-        
-
-    </article>
    
-         
-    
+    <article>
+        <div id="sec1" class="fleft">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente amet assumenda similique odit voluptate debitis quae perferendis repellendus saepe. Aut suscipit qui amet dignissimos nihil illum vel saepe dicta sed.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam reiciendis quia quam dolores, praesentium ea incidunt, iusto maxime eum recusandae, nobis minima eligendi in debitis dolorum voluptates quisquam earum.
+            <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum qui doloremque magni adipisci numquam repellendus, consectetur nihil assumenda fuga temporibus, animi corporis tempora blanditiis nisi aut iste ipsa, tempore velit?
+
+            </p>
+
+        </div>
+
+        <div id="sec2" class="fleft">
+            <iframe src="/Day 5 and Day 6/login.html" frameborder="0"></iframe>
+        </div>
+
+    </article>    
 
     <footer>
-        <address>#9, Survey No 8/3, Vishwaneedam Post,<br> Herohalli, 5th Cross Veerabhadreshwara Nagar,<br> Venkateshwara Layout, Sunkadakatte,<br> Bengaluru, Karnataka 560091</address>
+        <address>#9, Survey No 8/3, Vishwaneedam Post, Herohalli,<br> 5th Cross Veerabhadreshwara Nagar, Venkateshwara Layout,<br> Sunkadakatte, Bengaluru, Karnataka 560091</address>
     </footer>
+
 
 </body>
 
