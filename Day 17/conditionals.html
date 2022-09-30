@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+
+        <title>Conditional Statements</title>
+
+        <script>
+
+            var odd="",even="";
+
+            for(var num=0;num<=20;num++)
+            {
+                var res=num%2;
+            
+                if(res!=0){
+
+                   if(odd==""){
+                    odd=num
+                    }
+                    else{
+                    odd+=", "+num
+                    console.log(odd)
+                    }
+                }
+                else{
+                    if(even==""){
+                        even=num
+                    }
+                    else{
+                        even+=", "+num;
+                    }
+                }
+            }
+
+            document.write("Even <br>"+even+"<br><br>")
+            document.write("odd <br>"+odd)
+
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+
+
+</html>
