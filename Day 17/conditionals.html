@@ -35,6 +35,26 @@
             document.write("Even <br>"+even+"<br><br>")
             document.write("odd <br>"+odd)
 
+            var pass='',percentage=12;
+
+            if(pass=='p'){
+                if(percentage>=85){
+                    document.write("<h2> Results : A+</h1>");
+                }
+                else if(percentage>=60&&percentage<=84){
+                    document.write("<h2>Results: A</h2>");
+                }
+                else if(percentage>=50&&percentage<=59){
+                    document.write("<h2>Results: B</h2>");
+                }
+                else{
+                    document.write("<h2>Results: C</h2>");
+                }
+            }
+            else{
+                document.write("<h2>Results: Fail</h2>")
+            }
+
         </script>
     </head>
 
