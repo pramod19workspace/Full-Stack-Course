@@ -73,6 +73,41 @@
 
             eli(60,60,60,'mca','');
 
+            function marks(name,m1,m2,m3){
+                //To find percentage and grade
+                var pass=true;
+                
+                if(m1<35 || m2<35 || m3<35){
+                    pass=false;
+                }
+
+                var total=m1+m2+m3;
+                var percentage=(total/3)*100;
+
+                if(percentage>=85)
+                {
+                    document.write("<br><br>Good Morning "+name+". Grade : ");
+                    document.write("A+");
+                }
+                else if(percentage>=60&&percentage<=84){
+                    document.write("<br><br>Good Morning "+name+". Grade : ");
+                    document.write("A");
+                }
+                else if(percentage>=50&&percentage<=59){
+                    document.write("<br><br>Good Morning "+name+". Grade : ");
+                    document.write("B");
+                }
+                else{
+                    document.write("<br><br>Good Morning "+name+". Grade : ");
+                    document.write("C");
+                }
+
+                // document.write("Good Morning "+name+". Grade : ");
+            }
+
+
+            marks('Pramod',56,67,89);
+
         </script>
     </body>
 
