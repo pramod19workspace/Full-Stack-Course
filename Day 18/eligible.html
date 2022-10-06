@@ -1,0 +1,74 @@
+<html>
+
+    <head>
+        <title>Eligible</title>
+        <style>
+            *{
+                margin: 0px;
+            }
+            h1{
+                background-color: yellow;
+            }
+            ul{
+                background-color: black;
+            }
+            li{
+                color: aqua;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+
+            var sslc=50,puc=60,deg=60,qualification="be",branch="ase",eligible=true;  //qualification=mca or be, in 'be' branch only cse or ise 
+            var elicount=4;
+
+            var msg="<h1>Candidate not selected due to following reasons</h1><ul>";
+
+            if(sslc<60){
+                eligible=false;
+                msg+="<li>marks in sslc less than 60</li>";
+                elicount--;
+                // exit(0);
+            }
+            if(puc<60){
+                eligible=false;
+                msg+="<li>marks in puc less than 60</li>";
+                elicount--;
+            }
+            if(deg<60){
+                eligible=false;
+                msg+="<li>marks in deg less than 60</li>";
+                elicount--;
+            }
+
+            if(qualification=="mca" || qualification=="be"){
+                if(qualification=='be'){
+                    if(branch!="cse"||branch!="ise"){
+                        eligible=false;
+                        msg+="<li>Branch type not considered</li>";
+                        elicount--;
+                    }
+                }
+            }
+            else{
+                eligible=false;
+                msg+="<li>Qualification not considered</li>";
+                elicount--;            
+            }
+            // document.write(eligible);
+
+            if(eligible==true){
+                document.write("COngrates.<br>Your are selected.<br>Match criteria "+elicount+"/4");
+            }
+            else{
+                document.write(msg+"<br>Match Criteria : "+elicount+"/4");
+            }
+
+        </script>
+    </body>
+
+
+
+</html>
