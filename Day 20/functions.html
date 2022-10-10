@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <script>
+
+            var msg="<h1>Good Morning ";
+            var min=35,max=100;
+
+            function hello(name){
+                document.write(msg+name+"</h1>");
+                msg="<h1>Good Afternoon "
+            }
+
+            function checkpass(m1,m2,m3){
+                var pass=true;
+                var failed="";
+
+                if(m1<min){
+                    pass=false;
+                    failed+=",subject1";
+                }
+
+                if(m2<min){
+                    pass=false;
+                    failed+=",subject2";
+                }
+
+                if(m3<min){
+                    pass=false;
+                    failed+=",subject3";
+                }
+
+                window.res=failed.slice(1);
+                return pass;
+            }
+
+            function grade(name,m1,m2,m3){
+                var pass,grd="";
+
+                hello(name);
+                
+                pass=checkpass(m1,m2,m3);
+                console.log(pass);
+
+                var total=m1+m2+m3;
+                var percentage=(total/(max*3))*100;
+
+                if(pass){
+                    if(percentage>=85){
+                        grd="A+";
+                    }
+                    else if(percentage>=60&&percentage<85){
+                        grd="A";
+
+                    }
+                    else if(percentage>=50&&percentage<60){
+                        grd="B";
+                    }
+                    else{
+                        grd="C"
+                    }
+                    document.write("Results : Passed "+"Total : "+total+" Percentage : "+percentage+" Grade : "+grd);
+                }
+                else{
+                    document.write("Results : Failed "+"In Subjects : "+window.res);
+                }
+
+            }
+
+            grade("Pramod R",50,80,90);
+            document.write(window.res);
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
