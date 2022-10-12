@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script languaage="javascript" type="text/javascript">
+            
+            var list="Saurav,Pooja";
+
+            document.write("List : "+list);
+            
+            var list_length=list.length;
+            document.write("<h3>List Length : "+list_length+"</h3>");
+
+            var list_slice1=list.slice(1); //0th character is removed and remaining is printed
+            document.write("<h3>List slice : "+list_slice1+"</h3>");
+
+            var list_slice2=list.slice(0,3); //1 nd 2 character printed excluding 3
+            document.write("<h3>List slice : "+list_slice2+"</h3>");
+            
+            var list_rslice=list.slice(-3,-1);
+            document.write("<h3>List slice : "+list_rslice+"</h3>");
+            // console.log(list)
+
+            var list_revslice=list.slice(-8,-2);
+            document.write("<h3>List reverseSlice : "+list_revslice+"</h3>");
+
+            var list_subString=list.substring(3,12); //same as slice but does not accept negative index values
+            document.write("<h3>List Substring : "+list_subString+"</h3>");
+
+            var list_fsubstring=list.substring(7);
+            document.write("<h3>List Fsubstring : "+list_fsubstring+"</h3>");
+
+            //Searches and replaces and it does not change the main string.... o/p will be new string
+            var list_replace1=list.replace(",","--");
+            document.write("<h3>List Replace1 : "+list_replace1+"</h3>");
+            console.log("<h3>List: "+list+"</h3>");
+
+            var list_replace2=list.replace("a","A"); //replaces a only on the first occurence. other occurence will not be replaced
+            document.write("<h3>List Replace2 : "+list_replace2+"</h3>");
+            console.log("<h3>List: "+list+"</h3>");
+
+            //changes to uppercase
+            var list_uppercase=list.toUpperCase(list);
+            document.write("<h3>List UpperCase: "+list_uppercase+"</h3>");
+
+            var list_lowercase=list.toLowerCase(list);
+            document.write("<h3>List LowerCase: "+list_lowercase+"</h3>");
+            console.log("<h3>List: "+list+"</h3>");
+
+
+
+        </script>
+    </head>
+    <body>
+        
+
+    </body>
+</html>
