@@ -4,7 +4,7 @@
 
         var names=['Pramod','Karthik','Bhavya','Mahantesh','Akshay',123456];
         document.write("<b>Initial Array : "+names+"</b>");
-        console.log("Initial Array : "+names);
+        // console.log("Initial Array : "+names);
 
         // var poparray=names.pop(); //pops out the last valuue from the array
         // console.log("poparray : "+poparray);
@@ -41,9 +41,57 @@
         // console.log(typeof strArray);
         // console.log(typeof names);
 
-        
-        
+        // var arrayjoined=names.join('.');//The join() method returns an array as a string.
+        // // The join() method does not change the original array.
+        // // Any separator can be specified. The default is comma (,).
+        // console.log(arrayjoined);
 
+        // var batch1=["pramod",'karthik','prathusha'];
+        // var batch2=['bhavya','yuvraj'];
+        // var merged=names.concat(batch1,batch2);
+        // console.log(merged);
+
+        // var num_multi=[
+        //     ["Pramod","Bhavya"],
+        //     ["Karthik","Punya"],
+        //     "Rahu;"
+        // ];
+        // console.log(num_multi[1][0]);
+
+        // var multi_obj={
+
+        //     user1:{name:"swathi",age:"25"},
+        //     user2:{name:"Shailashree",age:"25"},
+        //     user3:{name:"Geetha",age:"25"}
+
+        // }
+
+        // console.log(multi_obj["user1"]);
+
+        var multi_obj1=[
+
+            {name:"swathi",age:"25"},
+            {name:"Bhuvan",age:"35"},
+            {name:"Yash",age:"15"}
+
+    ];
+
+    console.log("Initial Array : "+multi_obj1);
+
+    // console.log(multi_obj1[0]["name"]);
+
+    var byAge=multi_obj1.slice(0);
+    console.log(byAge);
+
+    // byAge.sort((x,y)=>x.age.localeCompare(y.age));//ascending
+
+    byAge.sort((y,x)=>y.name.localeCompare(x.name));//descending
+
+    console.log(byAge);
+    
+    names.forEach(function(val,key){ //for each value present in array we are giving key 
+        console.log(val+" - "+key);
+    });
 
         </script>
     </head>
