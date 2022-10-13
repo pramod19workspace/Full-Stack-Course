@@ -1,3 +1,62 @@
 <html>
+    <head>
+        <script>
+
+            var list="Saurav,Pooja";
+
+            var list_concat=list.concat(",Sree");
+            var list_concat=list_concat.concat(", Krishna, Praveen");
+            document.write("List_Concat : "+list_concat);
+            
+            list1="                 Saurav,Pooja      ";
+            var list_trim=list1.trim();
+            document.write("<br><br>List_trim : "+list_trim);
+            console.log(list_trim);
+
+            var list_charAt=list.charAt(1); //Prints charater present at position 1
+            document.write("<br><br>List_charAt : "+list_charAt);
+
+            //gives the index position of a(first occurence of string)
+            var list_indexOf=list.indexOf("a");
+            document.write("<br><br>List_indexOf : "+list_indexOf);
+
+            //gives the last occurence index position of a(last occurence of string)
+            var list_lastIndexOf=list.lastIndexOf("a");
+            document.write("<br><br>List_LastIndexOf : "+list_lastIndexOf);
+
+            //second occurence of a
+            var list_secIndexOf=list.indexOf("a",list_indexOf+1);
+            document.write("<br><br>List_SecondIndexOf : "+list_secIndexOf);
+
+            //same as indexof but does not support second parameter
+            var list_search=list.search("a");
+            document.write("<br><br>List_Search : "+list_search+"<br><br>");
+
+            var a='100';
+            var b=200;
+
+            document.write(a+b)
+
+
+            if(a===100){ //=== when used compares with the same datatype that of the variable
+                alert("number")
+            }
+            else{
+                alert("string")
+            }
+
+            
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
     
 </html>
