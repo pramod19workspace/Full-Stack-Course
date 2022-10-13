@@ -1,7 +1,45 @@
 <html>
     <head>
-        <script>
+        <script language="javascript" type="text/javascript">
+
+            var names=['Pramod','Karthik','Bhavya','Mahantesh','Akshay'];
+
+            var name=new Array('Pramod','Karthik','Bhavya','Mahantesh','Akshay');
+            document.write(name+"<br>");
+            document.write(names+"<br>");
+
+            console.log(names);
+            console.log(names.length);
+            console.log(names[0],names[3]);
+            console.log(names[names.length-1]);
+            console.log(names[names.length-2]);
+            names[names.length]="Pooja"; //adds the string to last position of array
+            console.log(names);
+
+            document.write("<ul>");
             
+                for(var i=0;i<names.length;i++){
+                    document.write("<li>"+names[i]+"</li>");
+                }
+                document.write("</ul>");
+
+                document.write("<table>")
+                for(var i=1,j=0;j<names.length;i++,j++){
+                    document.write("<tr>"+"<td>"+i+"</td>"+"<td>"+names[j]+"</td></tr>")
+                }
+                document.write("</table>");
+
+
+
         </script>
+
+        <style>
+            table{
+                border: 2px solid red;
+                background-color: black;
+                color: antiquewhite;
+            }
+            
+        </style>
     </head>
 </html>
