@@ -2,15 +2,17 @@
     <head>
         <script>
             
-            var string="12345";
-            var exp=/^[0-9]/;
+            var string="asd1lasd";
+            var exp=/[0-9]/;
 
-            console.log(exp.test(string));
+            var res=exp.test(string);
+            console.log(res);
 
-            var string2="pramod@gmail.com"
-            var exp1=/^[a-zA-Z0-9\@(\.)\-]+\@[a-zA-Z0-9]+\.(com)$/;
+            var string1='php';
+            var exp1=/p.p/;
+            var res1=exp1.test(string1);
+            console.log(res1);
 
-            console.log(exp1.test(string2));
 
 
         </script>
