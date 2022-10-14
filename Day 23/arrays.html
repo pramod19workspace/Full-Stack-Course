@@ -1,0 +1,75 @@
+
+<html>
+
+<head>
+    <script>
+
+        // var multi={name:"Praveen",age:"24",phoneNumber:"9880236958"}
+
+        // // console.log(Object.keys(multi));
+
+        // Object.keys(multi).forEach(key=>{
+        //     console.log(key+" = "+multi[key]);
+        // });
+
+        // var multi_obj={
+
+        //     user1:{name:"swathi",age:"25"},
+        //     user2:{name:"Shailashree",age:"25"},
+        //     user3:{name:"Geetha",age:"25"}
+
+        // }
+
+        // multi_obj["user1"];
+
+        // Object.keys(multi_obj).forEach(key=>{
+        //     console.log(key);
+        //     console.log(multi_obj[key]);
+        //         Object.keys(multi_obj[key]).forEach(k=>{
+        //             console.log(k);
+        //             console.log(multi_obj[key][k]);
+        //             console.log(k+" = "+multi_obj[key][k]);
+        //         });
+        // });
+
+        var numbers=[0,11,11,92,92,73,73,46,46,95];
+
+        // function unique(array){
+        //     return array.filter((a,b)=>array.indexOf(a)===b)
+        // };
+
+        // var unique_arr=unique(numbers);
+        // console.log(unique_arr);
+
+        function removedup(duparray)
+        {
+            var nodup=[];
+            var dup=[];
+
+            for(var i=0;i<duparray.length;i++){
+                if(nodup.indexOf(duparray[i]==-1)){
+                    nodup.push(duparray[i])
+                    console.log(nodup)
+                }
+                else{
+                    dup.push(duparray[i]);
+                    console.log(dup)
+                }
+            }
+            var res=[nodup,dup];
+            return res;
+        }
+        var result=removedup(numbers);
+        console.log(result);        
+
+    </script>
+    <style>
+        th{
+            color: red;
+        }
+    </style>
+
+</head>
+
+
+</html>
