@@ -6,12 +6,35 @@
             var exp=/[0-9]/;
 
             var res=exp.test(string);
-            console.log(res);
+            console.log("1 "+res);
 
             var string1='php';
             var exp1=/p.p/;
             var res1=exp1.test(string1);
-            console.log(res1);
+            console.log("2 "+res1);
+
+            var string2="file\/.html";
+            var exp2=/^[a-z0-9\\\/]+.*\.(html)$/;
+
+            var res2=exp2.test(string2);
+            console.log("3 "+res);
+
+            var name="shree     a";
+            var reg3=/^[a-zA-Z]{3}e{2}.{5}a$/;
+            var res3=reg3.test(name);
+            console.log("4 "+res3);
+
+            var password="12345678Singhamlion";
+            var exp5=/^[0-9]{8}[_\-\.@]?[A-Za-z]+$/;
+            console.log("5 "+exp5.test(password));
+
+            var exp_email1=/^[a-zA-Z0-9\-\_\.]+\@[a-zA-Z0-9\-\_\.]+\.[a-z]{2,4}$/;
+            var exp_email1=/^[a-zA-Z0-9\-\_\.]+\@[a-zA-Z0-9\-\_\.]+\.[a-z]{2,4}$/;
+
+            var email="monish_123@unique123.com";
+            console.log(exp_email1.test(email));
+
+
 
 
 
