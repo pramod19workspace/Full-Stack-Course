@@ -4,49 +4,43 @@
 </head>
 <body>
     <script src="validation.js" type="text/javascript"></script>
-    <h1>Registration Form</h1>
-
-    <p id="err">
-
-    </p>
+    <h1><center>Form</center></h1>
+    <p id="errorMsg"></p>
 
     <form action="" method="get">
         <table>
             <tr>
-                <td>Name* : </td>
-                <td><input type="text" id="name" value=""></td>
-
+                <td>Name : </td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td><input type="text" name="" id="email"></td>
             </tr>
 
             <tr>
-                <td>Email* : </td>
-                <td><input type="text" id="email" value=""></td>
+                <td>Phone No : </td>
+                <td><input type="text" id="phone"></td>
             </tr>
 
             <tr>
-                <td>Phone* : </td>
-                <td><input type="text" id="phone" value=""></td>
+                <td>Current Address : </td>
+                <td><textarea name="" id="currentAddress" cols="30" rows="10" onkeyup="sameAddress()"></textarea></td>
             </tr>
 
             <tr>
-                <td>Current Address</td>
-                <td><textarea id="currentAddress" onkeyup="sameAddress()"></textarea></td>
-                
-                
-            </tr>
-            <tr>
-                <td>Permanent Address</td>
-                <td><textarea id="permanentAddress"></textarea></td>
-                <td><input type="checkbox" name="" id="same" onclick="sameAddress()">Same as Current Address</td>
-            </tr>
+                <td>Permanent Address : </td>
+                <td><textarea name="" id="permanentAddress" cols="30" rows="10"></textarea></td>
 
+                <td><input type="checkbox" id="same" onclick="sameAddress()">Same as Current Address</td>
+            </tr>
 
             <tr>
                 <td></td>
-                <td><input type="submit" value="Submit" onclick="return(validation())"/></td>
+                <td><input type="submit" value="Submit" onclick="return(validation())"></td>
             </tr>
-
         </table>
+
 
 
 
