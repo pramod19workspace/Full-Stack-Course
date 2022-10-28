@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+        <script>
+
+        </script>
+
+    </head>
+    <body>
+
+        <button id="datebtn">Show Date</button>
+        <input type="text" id="intext">
+
+        <p id="dateval"></p>
+        
+        <script>
+            document.getElementById("datebtn"),addEventListener("click",displayDate);
+            document.getElementById("intext").addEventListener("focus",sayHi);
+
+            function displayDate(){
+                document.getElementById("dateval").innerHTML=Date();
+            }
+
+            function sayHi(){
+                document.getElementById("dateval").innerHTML="Hello on Focus";
+            }
+        </script>
+
+    </body>
+</html>
