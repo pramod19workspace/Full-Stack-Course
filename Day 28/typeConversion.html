@@ -1,0 +1,57 @@
+<html>
+    <head>
+    
+    </head>
+
+    <body>
+        <center>Type Conversions</center>
+        <script>
+            var name="Pramod";
+            var age=10;
+            var val=10.10;
+            var num=[1,2,3,4]
+            var details={name:"pooja",age:24}
+            var dateVal=new Date();
+
+            document.write("<br>Name:"+typeof name)
+            console.log("Name:"+typeof name)
+
+            document.write("<br>Age:"+typeof age)
+            console.log("Age:"+typeof age)
+
+            document.write("<br>val:"+typeof val)
+            console.log("val:"+typeof val)
+
+            document.write("<br>num:"+typeof num)
+            console.log("num:"+typeof num)
+
+            document.write("<br>details:"+typeof details)
+            console.log("details:"+typeof details)
+
+            document.write("<br>dateVal:"+typeof dateVal)
+            console.log("dateVal:"+typeof dateVal)
+
+            document.write("<br>numToString:"+typeof String(age))
+            console.log("numToString:"+typeof String(age))
+            
+            document.write("<br>age:"+typeof age)
+            console.log("age:"+typeof age)
+
+            document.write("<br>expToString:"+typeof (100+23).toString())
+            console.log("expToString:"+typeof (100+23).toString())
+
+            document.write("<br>"+Number(false)) //returns 0
+            console.log(Number(false))
+
+            document.write("<br>"+Number(true)) //returns 1
+            console.log(Number(true))
+
+            document.write("<br>Date as String : "+String(dateVal)) 
+            console.log("<br>Date as String"+String(dateVal))
+
+
+            
+
+        </script>
+    </body>
+</html>
