@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<script>
+    
+    var today=new Date();
+    
+    document.write(today);
+
+    document.write("<br><br>Today : "+today);
+
+    var day=today.getDate();
+    document.write("<br><br>Day : 0"+day);
+
+    //for month we should pre increment before printing
+    var month=today.getMonth();
+    document.write("<br><br>Month : "+ ++month);
+
+    var year=today.getFullYear();
+    document.write("<br><br>Year : "+ year);
+
+    document.write("<br><br>Date : "+day+"/"+month+"/"+year);
+
+
+
+
+
+</script>
+</head>
+
+<body>
+    
+</body>
+
+</html>

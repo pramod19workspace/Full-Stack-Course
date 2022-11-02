@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script>
+
+            var today=new Date();
+            document.write(today);
+
+            // var time=today.getTime();
+            // document.write("<br><br>"+time);
+
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            //hoisting
+            document.write("<br><br>"+h+":"+m+":"+s);
+
+            function getTime(){
+                var today=new Date();
+
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+
+            //adds zero to numbers<10
+            s=addZero(s);
+            m=addZero(m);
+
+            document.getElementById("time").innerHTML="<br><br>"+h+":"+m+":"+s;
+            //The setTimeout() method calls a function after a number of milliseconds. 
+            // 1 second = 1000 milliseconds.
+
+            setTimeout(function(){getTime()},1000);
+
+            }
+
+            function addZero(i){
+                if(i<10){
+                    i="0"+i;
+                }
+                return i;
+            }
+
+            function timeUp(){
+                alert("Time Up")
+            }
+
+            window.onload=(function(){getTime();});
+            // setTimeout(function(){timeUp()},5000);
+
+
+        </script>
+    </head>
+    <body style="background-color: lightblue;">
+        <p><center><b>Current Time</b></center></p>
+        <center> <p id="time"></p></center>
+    </body>
+</html>
