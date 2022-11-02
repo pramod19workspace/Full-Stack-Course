@@ -1,0 +1,140 @@
+<html>
+    <head>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            div#content{
+                width: 100px;
+                height: 100px;
+                background-color: grey;
+                border-radius: 50%;
+                position: relative;
+                animation-name: horizontal;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes horizontal {
+
+                0% {background-color: #E789F4; left:0px; top:0px}
+                20% {background-color: yellow; left:20%; top:0px}
+                40% {background-color: blue; left:40%; top:0px}
+                60% {background-color: green; left:60%; top:0px}
+                80% {background-color: red; left:80%; top:0px}
+                100% {background-color: black; left:100%; top:0px}
+
+                
+            }
+
+            @keyframes vertical {
+
+                0% {background-color: #E789F4; left:0px; top:0%}
+                20% {background-color: yellow; left:0%; top:20%}
+                40% {background-color: blue; left:0%; top:40%}
+                60% {background-color: green; left:0%; top:60%}
+                80% {background-color: red; left:0%; top:80%}
+                100% {background-color: black; left:0%; top:100%}
+
+
+            }
+
+            @keyframes first {
+
+                0% {background-color: #E789F4; }
+                25% {background-color: yellow; }
+                50% {background-color: blue; }
+                75% {background-color: green; }
+                100% {background-color: black; %}
+
+
+}
+
+
+        </style>
+    
+</head>
+
+    <body>
+        <center>
+        <p>
+            <button onclick="hchange()">Horizontal</button>
+            <button onclick="vchange()">Vertical</button>
+            <button onclick="speedUp()">SpeedUp</button>
+            <button onclick="slowDown()">SlowDown</button>
+            <button onclick="effectOn()">EffectsOn</button>
+            <button onclick="effectOff()">EffectsOff</button>
+            <button onclick="reset()">Reset</button>
+
+           
+        </p>
+        </center>
+        <div id="content"></div>
+        <script>
+
+            function hchange(){
+                
+                document.getElementById("content").style.animationName="horizontal";
+                document.getElementById("content").style.width="50px";
+                document.getElementById("content").style.height="50px";
+
+            }
+
+            function vchange(){
+                
+                document.getElementById("content").style.animationName="vertical";
+                document.getElementById("content").style.width="100px";
+                document.getElementById("content").style.height="100px";
+
+            }
+
+            function speedUp(){
+                
+                document.getElementById("content").style.animationDuration="1s";
+
+            }
+
+            function slowDown(){
+                
+                document.getElementById("content").style.animationDuration="10s";
+
+            }
+
+            function effectOn(){
+                
+                document.body.style.animationName="first";
+                document.body.style.animationDuration="3s";
+                document.body.style.animationIterationCount="infinite";
+
+            }
+
+            function effectOff(){
+                
+                document.body.style.animationName="";
+
+
+            }
+
+            
+
+
+
+            function reset(){
+                
+                document.getElementById("content").style.animationName="horizontal";
+                document.getElementById("content").style.animationDuration="5s";
+                document.getElementById("content").style.animationIterationCount="infinite";
+                document.getElementById("content").style.width="100px";
+                document.getElementById("content").style.height="100px";
+
+
+            }
+
+
+
+        </script>
+    </body>
+</html>
+ 
