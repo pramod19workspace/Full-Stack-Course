@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+
+            screenDetails();
+
+            function screenDetails(){
+                document.write("<h2>Screen Details</h2>")
+                document.write("Screen Width : "+screen.width);
+                document.write("<br>Screen Height : "+screen.height);
+                document.write("<br>Screen AvailWidth : "+screen.availWidth)
+                document.write("<br>Screen AvailHeight : "+screen.availHeight)
+            }
+            setTimeout(function(){prmt()},5000)
+
+            function prmt(){
+                var name=prompt("Who are You?");
+                document.write("<h1>Welcome "+name+"</h1> <a href='#' onclick='return(leavepage())'>Continue</a>");
+            }
+
+            function leavepage(){
+                var conf=confirm("Are you sure you want to leave this page");
+                if(conf){
+                    open("https://www.google.com/")
+                }
+                else{
+                    return false;
+                }
+
+            }
+
+            
+        </script>
+    </head>
+</html>
