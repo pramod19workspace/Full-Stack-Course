@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            "use strict";
+            let i="sree";
+            for(let i=0;i<10;i++){ //block scope variable
+                let i=5;
+                document.write('<br>'+i);
+
+                document.write('<br>'+j); //hoisting 
+                var j=5;
+
+                //var allows hoisting 
+                //let does not allow hoisting
+                
+            }
+        </script>
+    </head>
+</html>
