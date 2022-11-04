@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+            h2{
+                text-align: center;
+            }
+        </style>
+
+    </head>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+        <script src="jquery-3.6.1.min.js"></script>
+    <body>
+        <h2>Registration Form </h2>  
+        <br>
+        <form method="get" name="registration" action="success.html" >    <!--  -->
+            <table>
+                <tr>
+                    <td>Name : </td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number : </td>
+                    <td><input type="text" name="number" id="number" class="number"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Address : </td>
+                    <td><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+
+            </table>
+        </form>
+
+        <script>
+            $('form[name="registration"]').submit(function(event){
+
+                event.preventDefault();
+
+                var name=$("#name").val();//id based selector
+                var phoneNumber=$(".number").val();//class based selector
+                var email=$("input[name='email']").val();//name based selector
+
+                if(name==""){
+                    $("#name").focus().after("<span id='err1'> Please enter name </span>");
+                    return false;
+                }
+                else{
+                    $("#err1").remove();
+                }
+                if(phoneNumber==""){
+                    $("#number").focus().after("<span id='err2'> Please enter number </span>");
+                    return false;
+                }
+                else{
+                    $("#err2").remove();
+                }
+                if(email==""){
+                    $("#email").focus().after("<span id='err3'> Please enter email </span>");
+                    return false;
+                }
+                else{
+                    $("err3").remove();
+                }
+                           
+
+
+                this.submit();
+
+
+
+
+            });
+
+        </script>
+
+
+    </body>
+</html>
