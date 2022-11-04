@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <script>
+
+            class Wish{
+                constructor(name){ //constructor is called as soon as a object is created
+                    // this.name=name;
+                    document.write("Good Morning "+name+"<br>")
+                    this.name=name;
+                }
+
+                displayDate(){
+                    var today=new Date();
+
+                    var day=today.getDate();
+                    var month=today.getMonth();++month;
+                    var year=today.getFullYear();
+                    document.write("Date : "+ day+"/"+ month+"/"+year+"<br>")
+
+                    this.day=day
+                    this.month=month
+                    this.year=year
+
+                }
+
+
+                displayTime(){
+                    var time=new Date();
+
+                    var hour=time.getHours();
+                    var minutes=time.getMinutes();
+                    var seconds=time.getSeconds();
+
+                    seconds=addZero(seconds)
+                    minutes=addZero(minutes)
+
+                   function addZero(i)
+                    {
+                        if(i<10){
+                            i="0"+i;
+                        }
+                        return i;
+                    }
+                    document.write("Time : "+hour+":"+minutes+":"+seconds+"<br><br>")
+
+                    this.hour=hour
+                    this.minutes=minutes
+                    this.seconds=seconds
+                }
+
+                displaySomeInformation(){
+                    // document.write("Some information about other methods in this class : <br>"+"Date = "+this.day+"/"+this.month+"/"+this.year)
+                    
+                    document.write("Some information about other methods in this class : <br>"+"Date = "+this.day+"/"+this.month+"/"+this.year+"<br>"+"Time : "+this.hour+":"+this.minutes+":"+this.seconds+"<br>")
+                    
+                    this.displayDate();
+                    this.displayTime();
+
+                }
+
+
+            }
+
+            var pramod=new Wish("Pramod");
+            pramod.displayDate();
+            pramod.displayTime();
+            pramod.displaySomeInformation();
+            
+
+
+
+        </script>
+    </head>
+</html>
