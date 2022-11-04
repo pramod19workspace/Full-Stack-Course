@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <script>
+            class Employee{
+
+                constructor(id,name){
+                    this.id=id
+                    this.name=name
+
+                }
+
+                details(){
+                    document.write("<br>Good Morning : "+this.name+"<br> Your ID is "+this.id);
+
+                }
+
+                static hello(){ //static can be called only from class not by creating any object
+                    document.write("<br>Hello from static");
+                }
+
+
+
+            }
+
+            class Dept extends Employee{
+
+                constructor(id,name,dept){
+                    super(id,name)
+                    this.dept=dept
+                }
+
+                showDetails(){
+                    super.details();
+                    document.write("<br>From Dept class :dept - "+this.dept)
+                }
+
+                details(){
+                    document.write("<br> From Department class :dept - "+this.dept)
+                }
+            }
+
+
+            var pramod=new Employee("4al18cs059","Pramod");
+            var bhavya=new Dept("4al18cs014","Bhavya","CSE")
+            pramod.details();
+            bhavya.showDetails();
+
+
+            Employee.hello();
+
+
+        </script>
+    </body>
+</html>
