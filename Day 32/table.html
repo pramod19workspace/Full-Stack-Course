@@ -1,0 +1,114 @@
+<html>
+    <head>
+
+    </head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- https://www.w3schools.com/jquery/jquery_ref_selectors.asp -->
+
+
+    <script>
+        $(document).ready(function(){
+            $("#note").css({"background-color":"yellow","color":"red","font-size":"30px"});
+            $("tr").css({"font-size":"34px"});
+            // $("tr:first").css({"font-size":"50px"});
+            // $("tr:last").css({"background-color":"green"});
+            $("tr:even").css({"font-family":"Tahoma","background-color":"green"}) //even numbers
+            $("tr:odd").css({"font-family":"Verdana","font-style":"italic","background-color":"yellow"}) //odd numbers
+
+            // $("tr:lt(3)").css({"background-color":"cyan"}); // less than
+            // $("tr:eq(3)").css({"background-color":" #0000ff","color":"yellow"}); // exactly
+            // $("tr:gt(3)").css({"background-color":"#4ce641"}); // greater than
+
+            $("table").css({"background-color":"chocolate"});
+            $("li").css({"color":"chocolate","font-size":"25px"});
+            $("li:even").css({"font-size":"50px"});
+            // $("p:first,p:last").css({"color":"pink","font-size":"25px"});
+            $("div p:first-of-type").css({"background-color":"pink","font-size":"25px"});
+
+            $("p:contains('Jeevan')").css("color","yellow");
+
+            $("input").blur(function(){
+                $("#input").css({"background-color":" #0000ff","color":"yellow"});   
+                var txt=$("input").val();
+                $("#input:conatins('"+txt+"')").css({"background-color":"black","color":"yellow"}); //doubt
+            });
+
+
+
+        });
+    </script>
+    <body>
+        <center><h1 name="heading">Batch </h1></center>
+        
+
+        <div>
+            <center>
+                <table cellspacing="20px" cellpadding="20px" border=1>
+
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <th>Nikitha</th>
+                        <td>8965478965</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Kiran</td>
+                        <td>3265987412</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Akhil</td>
+                        <td>0236974596</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Anvitha</td>
+                        <td>2125669596</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan=3><span id="note"><b><u>Note* : am from span note</u></b></span><br>This is the last row</td>
+                    </tr>
+
+                </table>
+                <span class="info">This table is styled using jquery</span>
+            </center>
+            <p>Pramod R</p>
+            <p>Jeevan</p>
+        </div>
+        <br><br><br><input type="text"><br><br><br>
+
+        <p id="input">Hello Everyone</p>
+        <div>
+            <p>Arvind</p>
+            <p>Sunil</p>
+            <h2>
+                List
+            </h2>
+            <ul>
+                <li>one</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+                <li>Five</li>
+                <li>Six</li>
+            </ul>
+
+        </div>
+
+        <p>Jeevan Gowda</p> <p>Ashish </p>
+
+    </body>
+</html>
