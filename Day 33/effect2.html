@@ -1,0 +1,65 @@
+<html>
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Scroll Top Demo</title>
+
+        <style>
+
+        </style>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+
+    </head>
+
+    <body>
+        <div class="scr1">
+            <button id="stp">Stop</button>
+            <button id="bounce">Bounce</button>
+            <h1>Slide</h1>
+        </div>
+
+        <p id="p1">Image goes here........
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="Online Image" width="250px" height="250px" style="margin-left: 50px;">
+        </p>
+
+
+        <script>
+            $(document).ready(function(){
+                $("img").mouseenter(function(){
+                    $("img").attr({"width":"500px","height":"500px"});
+
+                });
+
+                $("img").mouseleave(function(){
+                    $("img").attr({"width":"100px","height":"100px"});
+                    
+                });
+
+                $("h1").mouseenter(function(){
+                    $("#p1").css("color","brown");
+                });
+
+                $("h1").mouseleave(function(){
+                    $("#p1").css("color","black");
+                });
+
+                // $("#stp").click(function(){
+                //     $("#p1").stop();
+                // })
+
+                $("#bounce").click(function(){
+                    $("img").effect("bounce",{times:5});
+                })
+
+            });
+            
+        </script>
+
+        <option value="blind">Blind</option>
+
+    </body>
+</html>
