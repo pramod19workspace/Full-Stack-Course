@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <script>
+            // console.log("Hello World");
+
+
+            // function Hello(){
+            //     for(var i=0;i<5;i++){
+            //         console.log(i);
+            //     }
+
+            //     console.log(i);
+
+            // }
+            // Hello();
+
+
+            //let
+
+            // function Hello2(){
+            //     for(let i=0;i<5;i++){
+            //         console.log(i);
+            //     }
+
+            //     console.log(i);
+
+            // }
+
+            // Hello2();
+
+            // const          //3rd topic
+
+            // const x=200;
+            // console.log(x);
+
+            // x=300;
+
+            // objects 4th topic
+
+            // const person={
+            //     name:"Pramod",
+            //     running:function(){ //old js
+            //         console.log("Pramod is Running");
+            //     },
+            //     walking(){ //new js ES6
+            //         console.log("Pramod is Walking");
+            //     }
+            // };
+
+            // console.log(person.name);
+            // console.log(person['name']);
+            // person.running();
+            // person.walking();
+
+            //this keyword 5th
+
+            // const car={
+
+            //     name:"Maruti",
+            //     drive(){
+            //         console.log(this);
+            //     }
+            // };
+
+            // car.drive();
+//------------------------------------------------------------------
+            // binding 6th
+
+            // const car={
+
+            //     name:"Maruti",
+            //     drive(){
+            //         console.log(this);
+            //     }
+            // };
+
+            // car.drive();
+
+            // const travel=car.drive.bind(car);
+            // travel();
+//-----------------------------------------------------------------
+            // functions 7th
+
+             // function multiply(num){
+
+            // return num*num;
+
+            // }
+            // console.log(multiply(5));
+
+            // const multiply=function(num){
+
+            //     return num*num;
+
+            // }  //normal function
+
+            // console.log(multiply(5)); //normal function
+
+            // arrow function
+
+            // const multiply=num=>num*num; //thick arrow => , with parameters
+
+           // const multiply= ()=>console.log("Hello"); //without parameters
+
+            // console.log(multiply());
+           // multiply();
+// ----------------------------------------------------------------
+
+            // Array mapping 8th
+
+            // const colors=["red","blue","yellow"];
+            // // const items=colors.map(item=>`<li>`+item+`</li>`);
+            // const items=colors.map(item=>item);
+            // console.log(items);
+//-----------------------------------------------------------------
+            // Object Destructuring 9th
+
+            // const address={
+
+            //     doorNo:"1",
+            //     city:"Bangalore",
+            //     country:"India"
+
+            // };
+
+            // const doorNo=address.doorNo;
+            // const city=address.city;
+            // const country=address.country;
+            // console.log(doorNo)
+            // console.log(city)
+            // console.log(country)
+
+            // const {country,doorNo,city:ct}=address; //ct is alias name for city
+            // console.log(doorNo)
+            // console.log(ct)
+            // console.log(country)
+//-----------------------------------------------------------------
+            
+            //Spread operator 10th
+
+            // const fruits=["apple","mango"];
+            // const vegtables=["tomato","potato"];
+
+            // console.log(fruits.concat(vegtables)); //normal concat
+
+            // const combine=[...fruits,...vegtables]; //spread operator ...
+            // console.log(combine) 
+            
+            // const combine=[...fruits,"banana",...vegtables,"beetroot"] //we can add items anywhere
+            // console.log(combine) 
+
+            //spread operator using objects
+
+            const first={
+                name:"Pramod",
+
+            };
+
+            const second={
+                // name:"Arvind",
+                age:"22",
+                area:"bangalore"
+            };
+
+            const combine={...first,...second}
+            console.log(combine)
+
+
+        </script>
+    </head>
+</html>
